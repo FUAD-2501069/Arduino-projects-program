@@ -1,0 +1,32 @@
+int led=13,led_2=12;
+void setup(){
+  pinMode(led,OUTPUT);
+ pinMode(led_2,OUTPUT);
+}
+void loop(){
+  digitalWrite(led,HIGH);
+  delay(1000);
+  digitalWrite(led,LOW);
+  delay(1000);
+
+  digitalWrite(led_2,HIGH);
+  delay(1000);
+  digitalWrite(led_2,LOW);
+  delay(1000);
+}
+
+//Use this code if you want both lights to turn on and off together.
+/*int led=13,led_2=12;
+void setup(){
+  pinMode(led,OUTPUT);
+ pinMode(led_2,OUTPUT);
+}
+void loop(){
+  digitalWrite(led,HIGH);
+   digitalWrite(led_2,HIGH);
+  delay(1000);
+  
+ digitalWrite(led,LOW);
+  digitalWrite(led_2,LOW);
+  delay(1000);
+}*/
