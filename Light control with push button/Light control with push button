@@ -1,0 +1,12 @@
+int Pin = 2;
+int led = 13;
+int State ;
+void setup() {
+  pinMode(led,OUTPUT);
+  pinMode(Pin,INPUT);
+}
+void loop() {
+  // Read the state of the push button
+  State = digitalRead(Pin);
+  digitalWrite(led,State); 
+}
